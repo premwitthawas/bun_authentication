@@ -1,0 +1,24 @@
+@urlAPI=http://localhost:4000/api/v1
+###
+POST {{urlAPI}}/register
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "123456"
+}
+### 
+POST {{urlAPI}}/login
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "123456"
+}
+###
+POST {{urlAPI}}/logout
+###
+GET {{urlAPI}}/refresh-token
+###
+GET {{urlAPI}}/me
